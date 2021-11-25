@@ -1,0 +1,202 @@
+/*Colores e imagenes todavia no definidos */
+/*IMPORT'S*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/*FONDO*/
+body {
+  background-image: url(https://wallpaperaccess.com/full/1698017.jpg);
+  background-size: cover;
+  background-color: #111111;
+  display: grid;
+  grid-template-areas: 'header header header header' 'main main main main' 'footer footer footer footer';
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: 400px 2000px 15px;
+  column-gap: 1px;
+  row-gap: 15px;
+  justify-items: center; }
+
+/*variables*/
+/*MENU*/
+.header {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  grid-area: header; }
+  .header .header__logo {
+    text-align: center;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0), black); }
+    .header .header__logo .logo__img {
+      height: 300px; }
+
+/* Barra de navegacion*/
+/*la rompi*/
+nav {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding: 0px; }
+  nav ul {
+    list-style: none;
+    width: 100%; }
+    nav ul li {
+      font-family: sans-serif;
+      list-style: none;
+      text-align: center;
+      float: left;
+      position: relative;
+      background-color: black;
+      width: 25%; }
+      nav ul li:hover ul {
+        display: block; }
+      nav ul li a {
+        background-color: black;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+        padding: 10px;
+        display: block;
+        height: 4vh;
+        font-size: 2vh; }
+        nav ul li a:hover {
+          color: black;
+          background: linear-gradient(to top, #ffb428, rgba(17, 17, 17, 0));
+          transition: background-color 1s; }
+
+/* Main */
+.main {
+  text-align: center;
+  grid-area: main;
+  position: relative; }
+
+/*Cartel de promociones*/
+.cartelPromo {
+  text-align: center; }
+
+.cartelPromo__imagen {
+  color: rgba(255, 255, 255, 0); }
+
+/*Food.HTML*/
+.food {
+  text-align: center;
+  position: relative;
+  grid-area: main;
+  width: 90vh; }
+
+.NuestrosProductosTitulo {
+  font-weight: bold;
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 1vh;
+  text-transform: uppercase;
+  font-size: 6vh;
+  color: #ffb428;
+  margin: 20px auto; }
+
+.imagenCarousel {
+  width: fit-content;
+  height: 50vh; }
+
+/*drinks.html*/
+.flex {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: stretch;
+  align-items: flex-start;
+  align-content: stretch; }
+  .flex .card {
+    margin: 0px 30px; }
+
+.modal {
+  align-content: flex-start; }
+
+.modal-content {
+  width: fit-content; }
+
+/*WHY_US.THML*/
+.Nosotros {
+  text-align: center;
+  grid-area: main;
+  overflow: hidden;
+  width: 100%; }
+
+.whyUs__titulo {
+  font-weight: bold;
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 1vh;
+  text-transform: uppercase;
+  font-size: 6vh;
+  color: #ffb428;
+  width: 100%; }
+
+.whyUs__parrafo {
+  padding: 2vh;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large; }
+
+.whyUs__img {
+  width: 50%; }
+
+/*Contacto.HTML*/
+main .Contacto {
+  font-weight: bold;
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 1vh;
+  text-transform: uppercase;
+  font-size: 6vh;
+  color: #ffb428; }
+
+main .Formulario {
+  background-color: black;
+  color: whitesmoke;
+  font-size: x-large;
+  width: 800px;
+  height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around; }
+
+main .Formulario div {
+  margin: auto; }
+
+/*Footer */
+footer {
+  color: white;
+  font-family: sans-serif;
+  font-size: medium;
+  width: 100%;
+  grid-area: footer; }
+  footer div {
+    background: linear-gradient(to top, black, rgba(17, 17, 17, 0));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start; }
+    footer div p {
+      margin: 10px;
+      flex-grow: initial; }
+
+/* Mobile Styles */
+@media only screen and (max-width: 320px) {
+  body {
+    grid-template-rows: 50px 800px 8px;
+    column-gap: 0px;
+    row-gap: 0px; } }
+
+/* Tablet Styles */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  body {
+    grid-template-rows: 250px 1000px 10px;
+    column-gap: 0px;
+    row-gap: 0px; } }
+
+/* Desktop Styles */
+@media only screen and (min-width: 769px) {
+  body {
+    column-gap: 0px;
+    row-gap: 0px; } }

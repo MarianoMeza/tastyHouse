@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+/*FONDO*/
+body{
+    background-image: url(https://wallpaperaccess.com/full/1698017.jpg);
+    background-size: cover;
+    background-color:rgb(17, 17, 17);
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: 400px 2000px 15px;
+    column-gap: 1px; 
+    row-gap: 15px;
+    justify-items: center;
+}
