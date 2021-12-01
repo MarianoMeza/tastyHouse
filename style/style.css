@@ -27,7 +27,7 @@ body {
   grid-area: header; }
   .header .header__logo {
     text-align: center;
-    background: linear-gradient(to top, rgba(17, 17, 17, 0), black); }
+    background: linear-gradient(to top, #111111, black); }
     .header .header__logo .logo__img {
       height: 300px; }
 
@@ -63,7 +63,7 @@ nav {
         font-size: 2vh; }
         nav ul li a:hover {
           color: black;
-          background: linear-gradient(to top, #ffb428, rgba(17, 17, 17, 0));
+          background: linear-gradient(to top, #ff3628, #111111);
           transition: background-color 1s; }
 
 /* Main */
@@ -92,7 +92,7 @@ nav {
   letter-spacing: 1vh;
   text-transform: uppercase;
   font-size: 6vh;
-  color: #ffb428;
+  color: #ff3628;
   margin: 20px auto; }
 
 .imagenCarousel {
@@ -128,7 +128,7 @@ nav {
   letter-spacing: 1vh;
   text-transform: uppercase;
   font-size: 6vh;
-  color: #ffb428;
+  color: #ff3628;
   width: 100%; }
 
 .whyUs__parrafo {
@@ -147,7 +147,7 @@ main .Contacto {
   letter-spacing: 1vh;
   text-transform: uppercase;
   font-size: 6vh;
-  color: #ffb428; }
+  color: #ff3628; }
 
 main .Formulario {
   background-color: black;
@@ -172,7 +172,7 @@ footer {
   width: 100%;
   grid-area: footer; }
   footer div {
-    background: linear-gradient(to top, black, rgba(17, 17, 17, 0));
+    background: linear-gradient(to top, black, #111111);
     display: flex;
     flex-direction: row;
     justify-content: center;
