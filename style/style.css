@@ -28,8 +28,7 @@ body {
   margin: 0;
   grid-area: header; }
   .header .header__logo {
-    text-align: center;
-    background: linear-gradient(to top, #111111, black); }
+    text-align: center;}
     .header .header__logo .logo__img {
       height: 300px; }
 
