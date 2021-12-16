@@ -14,7 +14,6 @@ $colorSecundario: rgb(255, 54, 40);
     grid-area: header;
     .header__logo{
         text-align: center;
-        background:  linear-gradient(to top, $colorPrimario, rgb(0, 0, 0));
         .logo__img{
             height: 300px;
         }
@@ -95,6 +94,12 @@ nav{
     width: fit-content;
     height: 50vh;
 }
+.titulo_imagen_carrousel{
+    font-size: 4vh;
+}
+.subtitulo_imagen_carrousel{
+    font-size: 20px;
+}
 /*drinks.html*/
 .flex{
     display: flex;
@@ -106,11 +111,14 @@ nav{
         margin: 0px 30px;
     }
 }
-.modal{
-    align-content: flex-start;
-}
 .modal-content{
-    width: fit-content;
+    width: 640px;
+
+}
+.img-modal{
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
 }
 /*WHY_US.THML*/
 .Nosotros{
