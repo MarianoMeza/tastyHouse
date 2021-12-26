@@ -11,7 +11,7 @@ $colorSecundario: rgb(255, 54, 40);
     width: 100%;
     height: 100%;
     margin: 0;
-    grid-area: header;
+    grid-area: heade;
     .header__logo{
         text-align: center;
         .logo__img{
@@ -170,6 +170,7 @@ main .Formulario{
 main .Formulario div{
     margin: auto;
 }
+
 /*Footer */
 footer{
     color: rgb(255, 255, 255);
@@ -189,23 +190,81 @@ footer{
         }
     }
 }
-
-/* Mobile Styles */
-@media only screen and (max-width: 320px) {
-    body {
-        grid-template-rows: 50px 800px 8px;
-        column-gap: 0px;
-        row-gap: 0px;
+/* Error.html */
+.main_error{
+    text-align: center;
+    grid-area: main;
+    float: left;
+    .error{
+        text-align: center;
+        font-size: 15vh;
+        color: $colorSecundario;
     }
 }
-  /* Tablet Styles */
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+
+.error2{
+    text-align: center;
+    font-size: 8vh;
+    color: $colorSecundario;
+}
+.volverBoton{
+    text-decoration: none;
+    text-align: center;
+    position: bottom;
+    font-size: 5vh;
+    background-color: $colorPrimario;
+    color: $colorSecundario;
+    grid-area: footer;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 420px) {
     body {
         grid-template-rows: 250px 1000px 10px;
         column-gap: 0px;
         row-gap: 0px;
+        .header{
+            margin-bottom: 20vh;
+        }
+        .main{
+            margin-top: 20vh;
+        }
+        .Nosotros{
+            margin-top: 20vh;
+        }
+        .food{
+            margin-top: 20vh;
+            overflow: hidden;
+        }
+    }
+    footer{
+        margin-top: 250vh;
     }
 }
+  /* Tablet Styles */
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+    body {
+        grid-template-rows: 250px 1000px 10px;
+        column-gap: 0px;
+        row-gap: 0px;
+        .header{
+            margin-bottom: 20vh;
+        }
+        .main{
+            margin-top: 20vh;
+        }
+        .Nosotros{
+            margin-top: 20vh;
+        }
+        .food{
+            margin-top: 20vh;
+            overflow: auto;
+        }
+    }
+    footer{
+        margin-top: 250vh;
+    }
+}
+
   /* Desktop Styles */
 @media only screen and (min-width: 769px) {
     body {
