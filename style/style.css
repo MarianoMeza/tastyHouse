@@ -11,7 +11,9 @@ body {
   background-size: cover;
   background-color: #111111;
   display: grid;
-  grid-template-areas: 'heade heade heade heade' 'main main main main' 'footer footer footer footer';
+  grid-template-areas: 'heade heade heade heade'
+ 'main main main main'
+ 'footer footer footer footer';
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-rows: 400px 2000px 15px;
   column-gap: 1px;
@@ -175,6 +177,7 @@ main .Formulario div {
 footer {
   color: white;
   font-family: sans-serif;
+  text-decoration: none;
   font-size: medium;
   width: 100%;
   grid-area: footer; }
